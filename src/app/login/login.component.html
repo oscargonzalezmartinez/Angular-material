@@ -1,0 +1,11 @@
+
+<div fxLayout="column" fxLayout.xs="column">
+    <mat-form-field>
+      <input matInput  [(ngModel)]="user.login" placeholder="User">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="user.password" placeholder="Password" type="password">
+    </mat-form-field>
+    <button mat-raised-button (click)="login()">Login</button>
+
+</div>
