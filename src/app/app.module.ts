@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { httpInterceptorProviders } from './http-interceptors';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +26,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule 
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
